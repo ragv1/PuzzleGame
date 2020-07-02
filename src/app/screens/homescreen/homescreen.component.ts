@@ -17,7 +17,7 @@ export class HomescreenComponent implements OnInit {
    }
   
    ngOnInit(): void {
-    this.game.audio.playHomeMusic();
+    // this.game.audio.playHomeMusic();
   }
 
   clearName = () => {
@@ -26,7 +26,7 @@ export class HomescreenComponent implements OnInit {
   }
 
   setUserName(){
-    this.game.audio.playclickMusic();
+    // this.game.audio.playclickMusic();
     this.game.init(this.homeInputValue);
     this.goToMapScreen();
   
