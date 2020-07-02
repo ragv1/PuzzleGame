@@ -1,0 +1,20 @@
+<div class="slideshow">
+    <p class="buble" *ngIf="speechBubble[0]">
+        Recuerdas el camino que te lleva a casa?!
+        <span class="arrow material-icons" (click)="nextBubble(1)">
+            forward
+        </span>
+    </p>
+    <p class="buble" *ngIf="speechBubble[1]" (click)="nextBubble(2)">
+        toca las casillas y forma el camino..
+        <span class="arrow material-icons">
+            forward
+        </span>
+    </p>
+    <p class="buble" *ngIf="speechBubble[2]" (click)="exit()">
+        No puedes jugar en diagonal
+        <span class="exit">
+            Jugar
+        </span>
+    </p>
+</div>

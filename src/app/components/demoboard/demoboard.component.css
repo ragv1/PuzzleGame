@@ -1,0 +1,37 @@
+
+.boardFrame{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100%;
+    grid-gap: 10px;
+    position: relative;
+    background-color: #25211e;
+    padding: 5px;
+  }
+    
+  .step{
+    border: 0px solid white;
+    background-color: #79b2ddb5;
+    background-color: #00000042;
+    border-radius: 7px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  
+  .start{
+    background-image: url("../../../assets/Vector_images/face2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55px;
+  }
+  
+  .end{
+    background-image: url("../../../assets/Vector_images/home.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55px;
+  }

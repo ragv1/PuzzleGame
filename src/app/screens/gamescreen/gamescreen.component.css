@@ -1,0 +1,43 @@
+:host {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-image: url("../../../assets/Vector_images/mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.game-holder {
+  grid-row: 3/10;
+  grid-column: 3/8;
+  background-color: #9c9c9c38;
+  padding: 10px;
+}
+
+app-score{
+  grid-row: 2/3;
+  grid-column: 3/8;
+  font-size: 3rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .game-holder {
+    grid-row: 3/10;
+    grid-column: 1/11;
+  }
+  .winner {
+    left: 8vw;
+    width: 72vw;
+  }
+  app-score{
+    grid-column: 1/11;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+}

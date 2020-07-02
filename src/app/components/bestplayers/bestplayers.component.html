@@ -1,0 +1,30 @@
+
+<div class="facade-wrapper"  *ngIf="!showList" (click)="open()">
+    <div>Mejores Jugadores</div>
+    <span class="facade material-icons" >
+        insights
+    </span>
+</div>
+<div class="overlay" *ngIf="showList">
+    <div class="wrapper">
+        <div class="title">Los Mejores!!!</div>
+          <span class="icon material-icons" (click)="close()">close</span>
+        
+            <div class="list">
+                <div class="user" style="background-color: black;">
+                    <div class="index">No.</div>
+                    <div class="name">Nombre</div>
+                    <div class="points">Puntos</div>
+                    <div class="rank">Nivel</div>
+                </div>
+                <div class="user" *ngFor="let player of players | async; index as i">
+                    <div class="index">{{i+1}}</div>
+                    <div class="name">{{player.username}}</div>
+                    <div class="points">{{player.accPoints}}</div>
+                    <div class="rank">{{player.rank}}</div>
+                </div>
+            </div>
+        
+        </div>
+        
+</div>

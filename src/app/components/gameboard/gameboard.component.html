@@ -1,0 +1,12 @@
+  <div class="gameframe" [ngStyle]="{ 'grid-template-columns' : cssColumns }">
+  
+    <div *ngFor="let cell of board; index as cellId;"
+    [id]="cellId"
+    (click)="cellClicked(cellId)" 
+    [style.background-color]="colorBoard[cellId] ? colorBoard[cellId] :  '' " 
+    [class.start]="cellId==start"
+    [class.end]="cellId==end"
+    class="step"></div>
+  </div>
+ 
+  

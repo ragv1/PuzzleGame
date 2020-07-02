@@ -1,0 +1,49 @@
+<h1 class="winner-title">Ganaste!!!!!</h1>
+
+<div class="cover">
+<div class="level-display">
+  <span class="level">
+    LVL {{data.level}}
+    </span>
+  <span class="star material-icons">
+    star
+    </span>
+</div>
+</div>
+
+<div class="level-clasification">Rango: {{data.winnerAs}}!</div>
+<div class="acomplishment">{{data.acomplishment}}</div>
+
+<div class="colored-background">
+  <div class="points">{{data.points}}</div>
+  <div class="best">Record: {{data.record}}</div>
+</div>
+
+
+<div class="buttons-container">
+
+  <div 
+  (click)="exitToMap()"
+  class="button"
+  type="button"
+  value="Salir"
+>
+  <!-- <span class="bt-icon material-icons">refresh</span> -->
+  Salir
+</div>
+
+<div 
+  (click)="nextWorld()"
+  class="button"
+  type="button"
+  value="Siguiente"
+>
+  <span class="bt-icon material-icons">forward</span>
+</div>
+</div>
+
+
+
+
+
+

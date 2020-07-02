@@ -1,0 +1,16 @@
+
+
+<app-bar [displayExit]="true" [userName]="username"></app-bar>
+<app-level></app-level>
+<app-score [score]="score" ></app-score>
+<div class="game-holder">
+  <app-gameboard></app-gameboard>
+</div>
+
+<app-lifebar></app-lifebar>
+
+<app-winner *ngIf="winner?true:false" [data]="winner"></app-winner>
+<app-looser *ngIf="looser?true:false" [data]="looser" ></app-looser>
+<app-reward *ngIf="reward" [message]="rewardMsg"></app-reward>
+
+<app-demoscreen *ngIf="showDemoComponent" (hide)="hideDemo($event)"></app-demoscreen>

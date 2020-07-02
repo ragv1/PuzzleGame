@@ -1,0 +1,55 @@
+
+.gameframe, gameframe{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    height: 100%;
+    grid-gap: 10px;
+  }
+    
+  .step, step{
+    border: 0px solid white;
+    background-color: #79b2ddb5;
+    background-color: #00000042;
+    border-radius: 7px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .start{
+    background-image: url("../../../assets/Vector_images/face2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  .end{
+    background-image: url("../../../assets/Vector_images/home.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  app-demoboard{
+    grid-row: 2/10;
+    grid-column: 3/9;
+  }
+  
+   /* Responsive Styles */
+   @media screen and (max-width: 767px) {
+   .winner{
+      left: 8vw;
+      width: 72vw;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .winner-title{
+      font-size: 40px;
+    }
+    .gameframe{
+      grid-gap: 4px;
+    }
+  }

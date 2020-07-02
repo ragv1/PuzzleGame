@@ -1,0 +1,25 @@
+<app-badge></app-badge>
+<app-score [score]="score" ></app-score>
+<div class="container">
+    <div  *ngFor="let world of worlds; index as i" 
+    (click)="goToLevel(world.number)"
+    [style.background-color]="world.color"
+    [class.lock]="isLocked(world.number)"
+    class="world-tiles">
+        {{world.number}}
+        <span [className]=" 'ranks '+displayableRankings[i]"></span>
+        <span class="points" [textContent]="getScore(i)"></span>
+    </div>
+
+    <div class="world-tiles custom">
+        <app-bestplayers></app-bestplayers>
+    </div>
+
+    <div class="world-tiles custom" style="background-color: transparent;">
+        <app-sound></app-sound>
+    </div>
+</div>
+
+<app-exit></app-exit>
+
+

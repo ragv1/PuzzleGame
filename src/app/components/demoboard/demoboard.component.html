@@ -1,0 +1,11 @@
+<div class="boardFrame" [ngStyle]="{ 'grid-template-columns' : rows }">
+    <div *ngFor="let s of steps; index as stepId;"
+    [id]="stepId"
+    [style.background-color]="steps[stepId]" 
+    [class.start]="stepId==0"
+    [class.end]="stepId==8"
+    class="step"></div>
+  </div>
+
+ 
+  

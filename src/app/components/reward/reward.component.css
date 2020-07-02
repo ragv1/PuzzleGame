@@ -1,0 +1,26 @@
+:host{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4.5rem;
+    text-shadow: 5px 6px 4px black;
+    grid-column: 3/8;
+    grid-row: 3/10;
+    background: transparent;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    :host{
+        grid-column: 1/11;
+      }
+  }
+  
+  @media screen and (max-width: 575px) {
+      :host{
+        font-size: 3.2rem;
+      }
+  }
+  

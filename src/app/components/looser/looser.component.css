@@ -1,0 +1,177 @@
+:host {
+    /* background-color: #232323;
+    width: 370px;
+    height: 44vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    justify-content: space-around;
+    grid-column: 3/8;
+    grid-row: 3/10;
+    z-index: 100;
+    margin: auto; */
+    background-color: #ffffff;
+      width: 370px;
+      height: 50vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 16px;
+      justify-content: flex-start;
+      grid-column: 3/8;
+      grid-row: 3/10;
+      z-index: 100;
+      margin: auto;
+      position: relative;
+      box-shadow: 7px 7px 2px 0px #1f1f1ff2;
+  
+  }
+  
+  .looser-title {
+    /* width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #e6dad3; */
+    width: 72%;
+    padding: 3px 0px 25px 0px;
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    top: -64px;
+    left: 14%;
+    position: absolute;
+    background-color: #c62a2a;
+    border-radius: 21px;
+    margin: 0px auto;
+    font-weight: normal;
+  }
+  
+  .button {
+    background-color: #1976d2;
+    border-style: none;
+    width: 93px;
+    height: 56px;
+    border-radius: 19px;
+    box-shadow: 3px 7px 2px 0px #1f1f1ff2;
+    font-family: Roboto, Verdana, Tahoma;
+    font-weight: 800;
+    color: #000000f0;
+    margin: 2px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .cover{
+    width: 100%;
+    height: 86px;
+    position: relative;
+    top: -20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .sad-face{
+    position: relative;
+    width: 81px;
+    height: 84px;
+    background-image: url('../../../assets/Vector_images/Sad_face2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .level{
+    font-size: 1.1rem;
+    color: white;
+    padding: 7px;
+  }
+  
+
+  
+  .lost-message{
+    font-size: 3.5rem;
+      text-align: center;
+      color: #c62a2a;
+      position: relative;
+      top: -24px;
+  }
+  
+  .lost-message-description{
+    font-size: 1.4rem;
+      text-align: center;
+      position: relative;
+      top: -31px;
+      font-weight: normal;
+  }
+  
+  .colored-background{
+    width: 200px;
+    height: 200px;
+    background-color: #787a86;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px auto;
+    position: relative;
+    padding: 10px 0px 5px 0px;
+    top: -26px;
+  }
+  
+  .points{
+    font-size: 3.5rem;
+    color: gold;
+  }
+  .best{
+    font-size: 2rem;
+    color: #c62a2a;
+  }
+  
+  .buttons-container{
+    position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      top: -11px;
+  }
+  
+  .bt-icon{
+    color: white;
+    font-size: 3.2rem;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    :host {
+      grid-column: 1/11;
+      width: 297px;
+    }
+    .buttons-container {
+      top: 17px;
+    }
+    .best{
+      font-size: 1.6rem;
+    }
+    .points{
+      font-size: 3.0rem;
+    }
+    .level-clasification{
+      font-size: 2.5rem;
+    }
+    .acomplishment{
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    :host{
+      width: 297px;
+    }
+   
+  
+  }
+  
+  

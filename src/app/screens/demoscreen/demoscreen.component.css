@@ -1,0 +1,37 @@
+:host {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  /* background-color: #01010150; */
+  background-color: white;
+  grid-row: 3/10;
+  grid-column: 3/9;
+
+}
+
+app-demoslideshow {
+  grid-column: 2/10;
+  grid-row: 4/7;
+  color: #322673;
+  z-index: 2;
+  margin-top: 21px;
+}
+  
+  .game-holder {
+    grid-row: 3/10;
+    grid-column: 3/8;
+    background-color: #9c9c9c38;
+    padding: 10px;
+  }
+
+  app-demoboard{
+    grid-row: 2/9;
+    grid-column: 3/9;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    :host{
+      grid-column: 1/11;
+    }
+  }
