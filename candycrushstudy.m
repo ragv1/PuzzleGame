@@ -25,16 +25,19 @@ this is explained with headonic treadmil, hapinnes equilibrium
 -rewarding sound and graphical design
 -drive sense of loose(your mental health is decreasing play again)
 
-aspects and metrics of the game
+Aspects and Metrics of the Game
 Brain health is for driving cut the player when they are loosing, and for making them wait for a bit or you can BUY lives //#6: Scarcity and Impatience
 Brain Level is for making you play again by not wanting to loose what they have.
+
 THE "score" in each level is for giving reward for passing the level from more of the "spected" score 
-    Make them feel specially good at playing that game and that they can get really far // at the beggining this should be the case #1yukai Principle Game Core Drive #1: Epic Meaning and Calling
-    Give them early acces to the goodies that the can buy later but making them thinks that it is thanks to they incredible ability;
+Make them feel specially good at playing that game and that they can get really far // at the beggining this should be the case #1yukai Principle Game Core Drive #1: Epic Meaning and Calling
+Give them early acces to the goodies that the can buy later but making them thinks that it is thanks to they incredible ability;
+
 forcin players after the first levels are over to get at least A or A+ or The maximun level (enforcing the idea of acomplishment) //#2yukai
 Sugest some hints or sugest that use the free unlockable - the goal is that the player doesnt get stuck at any point in time //#2yukai
 implement a leader board at the begining of the level against frieds or others --very important //#2yukai
 implements episode every 10 or 15 levels and the final one had to be the most dificult one of the level - again for the sense of acomplishment //#2yukai
+
 introduce tutorials(Especialy at the begining -first 35 levels-) to show any new element earn, or any new thing in the game //#3yukai Empowerment of Creativity
 let them keep the goodies that they earn through the whole game and present them in a way tha they wan to complete the set//#4 sense of ownership
 ask to invite friends let them interact with friends, send free health to keep playin or free goodies //#5social Influence and Relatedness
