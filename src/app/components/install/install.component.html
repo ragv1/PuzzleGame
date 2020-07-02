@@ -1,0 +1,11 @@
+<div class="install"  *ngIf="Pwa.promptEvent">
+    <img src="../assets/icons/icon-72x72.png" alt="imagen"> <span class="description">
+        Quieres instalar este juego ?
+    </span> 
+    <span class="button" (click)="installPwa()">
+        Instalar
+    </span>
+    <span class="icon material-icons" (click)="close()">
+        close
+    </span>
+</div>

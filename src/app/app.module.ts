@@ -31,6 +31,9 @@ import { ExitComponent } from './components/exit/exit.component';
 import { AngularFireModule } from "angularfire2";
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { environment } from "../environments/environment";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { PwaService } from "./services/pwa.service";
+import { InstallComponent } from './components/install/install.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,8 @@ import { environment } from "../environments/environment";
     DemohandComponent,
     BadgeComponent,
     BestplayersComponent,
-    ExitComponent
+    ExitComponent,
+    InstallComponent
   ],
   imports: [
     BrowserModule,
@@ -63,9 +67,10 @@ import { environment } from "../environments/environment";
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [UtilsService,GamelogicService],
+  providers: [UtilsService,GamelogicService,PwaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
