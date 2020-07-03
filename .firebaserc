@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "test-53118": {
+      "hosting": {
+        "routegame": [
+          "test-53118"
+        ]
+      }
+    }
+  }
+}

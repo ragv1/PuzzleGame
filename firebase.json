@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "routegame",
+      "public": "dist/routegame",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
