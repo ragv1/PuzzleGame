@@ -99,18 +99,17 @@ export interface Looser {
   points: number;
   record: number;
 }
-
 export const LEVEL_CONFIGURATION: Level[] =
   [
     { levelNumber: 1, rows: 4, cols: 4, start: 0, end: 15, score: 0 ,   ranking:0},
-    { levelNumber: 2, rows: 5, cols: 5, start: 0, end: 24, score: 0 ,   ranking:0},
-    { levelNumber: 3, rows: 6, cols: 6, start: 0, end: 35, score: 0 ,   ranking:0},
-    { levelNumber: 4, rows: 7, cols: 7, start: 0, end: 48, score: 0 ,   ranking:0},
-    { levelNumber: 5, rows: 8, cols: 8, start: 0, end: 63, score: 0 ,   ranking:0},
-    { levelNumber: 6, rows: 8, cols: 8, start: 7, end: 56, score: 0 ,   ranking:0},
-    { levelNumber: 7, rows: 7, cols: 7, start: 30, end: 0, score: 0 ,   ranking:0},
-    { levelNumber: 8, rows: 7, cols: 7, start: 0, end: 48, score: 0 ,   ranking:0},
-    { levelNumber: 9, rows: 7, cols: 7, start: 0, end: 48, score: 0 ,   ranking:0},
+    { levelNumber: 2, rows: 4, cols: 4, start: 0, end: 15, score: 0 ,   ranking:0},
+    { levelNumber: 3, rows: 5, cols: 4, start: 0, end: 19, score: 0 ,   ranking:0},
+    { levelNumber: 4, rows: 5, cols: 5, start: 0, end: 24, score: 0 ,   ranking:0},
+    { levelNumber: 5, rows: 5, cols: 5, start: 24, end: 0, score: 0 ,   ranking:0},
+    { levelNumber: 6, rows: 6, cols: 6, start: 0, end: 35, score: 0 ,   ranking:0},
+    { levelNumber: 7, rows: 7, cols: 7, start: 0, end: 48, score: 0 ,   ranking:0},
+    { levelNumber: 8, rows: 8, cols: 8, start: 0, end: 63, score: 0 ,   ranking:0},
+    { levelNumber: 9, rows: 9, cols: 9, start: 40, end: 8, score: 0 ,   ranking:0},
     { levelNumber: 10, rows: 10, cols: 10, start: 0, end: 99, score: 0, ranking:0},
   ];
   // export const LEVEL_CONFIGURATION_KIDS: Level[] =
