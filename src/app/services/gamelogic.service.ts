@@ -219,7 +219,7 @@ export class GamelogicService {
   }
 
   init(username:string, email?:string){
-    this.user.name = username;
+    this.user.name = this.formatUserInput(username);
     this.user.email = email? email : "";
     const defaultPlayer:Player = {
       username: this.user.name,
@@ -233,6 +233,12 @@ export class GamelogicService {
     let id = DATA_NAME+this.user.name.toLowerCase();
     this.gameData = this.db.create(id,defaultPlayer);
     this.instantiateRankings();
+  }
+
+  formatUserInput(value:string):string{
+    let input = value.trim();
+    let result = input.slice(0,8);
+    return result;
   }
 
   startTheMatch(){
