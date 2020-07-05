@@ -323,13 +323,7 @@ export class GamelogicService {
     }
     this._winnerChannel.next(this.winnerData);
     this.save();
-    this.updateRankings();
    
-  }
-
-  private updateRankings(){
-    this.rankingsForEveryWorld = this.gameData.levels.map(level=>level.ranking);
-    this.setRankings(this.rankingsForEveryWorld);
   }
 
   private maxPosiblePoints(porcentage:number){
@@ -342,6 +336,8 @@ export class GamelogicService {
     if(oldScore<this.score){
       this.gameData.levels[this.level-1].score = this.score;
       this.gameData.levels[this.level-1].ranking = this.ranking;
+      this.instantiateRankings();
+      this.gameData.rank = this.overallRanking;
     }
     let id =  DATA_NAME + this.user.name.toLowerCase();
     this.gameData.accPoints=this.totalScoreCalc(this.gameData.levels);
@@ -357,12 +353,18 @@ export class GamelogicService {
   }
 
   instantiateRankings(){
-    this.rankingsForEveryWorld = this.gameData.levels.map(level=>level.ranking);
-    let sumOfRankings:number = this.rankingsForEveryWorld.reduce(sumAll,START_WITH_CERO);
-    let numberOfRanking = this.rankingsForEveryWorld.length;
-    let rankingAverage = numberOfRanking==0? 0 :  sumOfRankings / numberOfRanking;
-    this.overallRanking = Math.round(rankingAverage);
+    this.rankingsForEveryWorld = this.calcRankingForEveryWorld(this.gameData.levels);
+    this.overallRanking = this.calcOverAllRanking(this.rankingsForEveryWorld);
     this.setRankings(this.rankingsForEveryWorld);
+  }
+  calcRankingForEveryWorld(levels:Level[]):number[]{
+    return levels.map(level=>level.ranking);
+  }
+  calcOverAllRanking(rankingsForEveryWorld:number[]):number{
+    let sumOfRankings:number = rankingsForEveryWorld.reduce(sumAll,START_WITH_CERO);
+    let numberOfRanking = rankingsForEveryWorld.length;
+    let rankingAverage = numberOfRanking==0? 0 :  sumOfRankings / numberOfRanking;
+    return Math.round(rankingAverage);
   }
 
   getUserName(){

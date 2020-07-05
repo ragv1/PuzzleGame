@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Player } from 'src/app/services/utils.service';
+import { RANKING } from 'src/app/services/utils.service';
 
 @Component({
   selector: 'app-bestplayers',
@@ -13,6 +13,7 @@ export class BestplayersComponent implements OnInit {
 
   players:Observable<any>;
   showList:boolean=false;
+  ranks:string[]=RANKING;
 
   constructor(private db:ApiService) { }
 
