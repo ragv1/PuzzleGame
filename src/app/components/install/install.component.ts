@@ -12,6 +12,7 @@ export class InstallComponent {
   
   installPwa(): void {
     this.Pwa.promptEvent.prompt();
+    this.close();
   }
 
   close(){
