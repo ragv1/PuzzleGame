@@ -22,7 +22,8 @@ export class BestplayersComponent implements OnInit {
     .pipe(
       map(firebaseElementArr=>{
         return firebaseElementArr
-          .map(firebaseElement=>firebaseElement.payload.toJSON())
+        .map(firebaseElement=> firebaseElement.payload.toJSON())
+        .sort(compareFn)
       })
     );
   }
@@ -36,3 +37,11 @@ export class BestplayersComponent implements OnInit {
   }
 
 }
+
+const compareFn = (a, b) => {
+  if (a.accPoints < b.accPoints)
+    return 1;
+  if (a.accPoints > b.accPoints)
+    return -1;
+  return 0;
+};
