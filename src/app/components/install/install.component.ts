@@ -7,11 +7,12 @@ import { PwaService } from 'src/app/services/pwa.service';
   styleUrls: ['./install.component.css']
 })
 export class InstallComponent {
-
+  canOpen:boolean=true;
   constructor(public Pwa: PwaService) {}
   
   installPwa(): void {
     this.Pwa.promptEvent.prompt();
+    this.canOpen=false;
     this.close();
   }
 
